@@ -75,3 +75,17 @@ NavHead.addEventListener("dblclick", RemoveCSS);
 
 
 
+
+var ButtonView = document.getElementsByClassName("btn btn-sm btn-success");
+for (let n=0; n<6; n++) {
+ButtonView[n].addEventListener("mouseover", function() {
+    var Disapear = document.getElementsByClassName("card-text");
+    Disapear[n].classList.toggle("collapse")
+
+});
+
+};
+
+//var lol = document.getElementsByClassName("card-img-top")
+//lol[0].classList.toggle("collapse").width = "20%";
+//lol[0].classListe.toggle("collapse").style.width
